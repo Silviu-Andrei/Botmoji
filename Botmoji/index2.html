@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+  <head>
+ 
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width">
+	<!-- Bootstrap (CSS FrameWork) -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Manual</title>
+
+    <link rel="stylesheet" href="style.css">
+
+
+  </head>
+
+<body class="h-80">
+<div class="container"> 
+<h3 class="mt-5">Press this button if you want to go back &rarr; <a class="btn btn-primary" href="index.html">See page before</a></h3>
+
+
+<div class="mt-5 container row justify-content-center align-items-center">
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="false">
+    <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+		<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+    </ol>
+    <div class="carousel-inner">
+	
+        <div class="carousel-item active">
+            <img style="height:750px; width:1000px;" class="d-block" src="img/gray.png" alt="First slide">
+            <div class="carousel-caption d-none d-md-block text-left">
+                <h3 class="text-center"><strong>Manual</strong></h3><br>
+                <p>Hi there, thanks for using our application. To make sure you get the most out of your experience, please take the time to read through this manual.</p>
+                <p>Texting on a digital platform is probably the most popular communication method these days. It is a practical and simple, but it can be improved.</p>
+                <p>It is far too common to have problems with miscommunication via texts, you've sent one thing, but you mean another, the two of you haven’t got the same idea, you’re different people, you aren’t always going to be perfectly in sync.</p>
+                <p>Fortunately, emojis exist. They help add character and flavour to a message, make the intention behind the words clearer. Our idea was to expand on this communication feature and add a voice to the text messages, triggered by an emoji, to attempt to improve clarity and communication.</p>
+				<p>The purpose of this proof-of-concept application is to improve Text-to-speech (TTS) technology as commonly found on many devices. We believe this will help in a variety of common situations:</p>
+				<ul>
+				<li>Having a voice assistant read your texts for you while you drive is convenient, not to mention safer than trying to read them yourself. If they can emote more freely and actively, the emotion of the text will surely be more easily understood</li>
+				<li>We hope it will allow some barriers to be removed for people with a wide range of disabilities as there is an element of additional audio and visual aid</li>
+				<li>Used by people with dyslexia and other reading difficulties as well as by pre-literate children</li>
+				<li>Employed to aid those with severe speech impairment usually through a dedicated voice output communication aid</li>
+				<li>Aid communication and learning of a second, or third, language</li>
+				</ul>
+				<br>
+			</div>
+        </div>
+		
+        <div class="carousel-item">
+            <img style="height:750px; width:1000px;" class="d-block" src="img/gray.png" alt="Second slide">
+			<div class="carousel-caption d-none d-md-block text-left">
+			<p>With the implementation of emojis we believe it is possible to modify synthesised speech to offer easier and more fluid communication. Some may even say it improves “<strong>Human</strong>” element of TTS.</p>
+			<h3><strong>A QuickStart Guide</strong></h3>
+			<p>A text-to-speech (TTS) system converts normal language text into speech; other systems render symbolic linguistic representations like phonetic transcriptions into speech.</p>
+			<p>The Web Speech API adds speech synthesis (text to speech), and it is the artificial production of human speech.The voice in TTS is computer-generated and reading speed can usually be sped up or slowed down.</p>
+			<p>This enables control of speech characteristics like pitch, and speaking rate, with this we can achieve varying levels of valence (emotions like sadness or happiness) and arousal (excitement or energy).</p>
+			<h4><strong>Pre-set Menu</strong></h4>
+			<h5><strong>Options</strong></h5>
+			<ul>
+			<li>excitement - &#128518; &#128525; &#128541; </li>
+			<li>disappointment - &#128580; &#128530; </li>
+			<li>sad - &#128532; &#128542; &#128577; &#128543; &#128534; &#128555; &#128557; &#128553; &#128549; &#128531; &#128533; </li>
+			<li>deadpan - &#128528; </li>
+			<li>sincere -  &#129296; </li>
+			<li>sarcasm - &#128579; </li>
+			<li>happy - &#128512; &#128514; &#128516; &#128515; &#128517; &#128521; &#128522; &#128578; &#128523; &#128537; &#128538; &#128540; &#128539; &#129303; </li>
+			<li>angry - &#128548; &#128545; &#128544; </li>
+			</ul>
+			<p>The application comes with built-in pre-sets of what we think these emotions sound like. The <strong>Rate</strong>, <strong>Pitch</strong> and <strong>Volume</strong> settings of the TTS Voice will be affected by the emoji and emotion that you choose, allowing for an improved communication experience.</p>
+			</div>
+        </div>
+		
+        <div class="carousel-item">
+            <img style="height:750px; width:1000px;" class="d-block" src="img/gray.png" alt="Third slide">
+			<div class="carousel-caption d-none d-md-block text-left">
+			<p>For example, the application will read every message with an “angry” tone if the text contains any of these 3 emojis “&#128548; &#128545; &#128544;”. If you select “angry” the <strong>Rate</strong>, <strong>Pitch</strong> and <strong>Volume</strong> are set to what we’ve judged to be “angry”, you can modify these and apply changes to suit your preference, this about improving your user experience after all.</p>
+			<h5><strong>Text Box</strong></h5>
+			<p>In here you can type any text that you please to test our pre-sets or to create your own settings. The goal is to create the best user customization. Simply use your keyboard to type!</p>
+			<h5><strong>Rate</strong></h5>
+			<p>Speech rate is a measure of the number of speech units generated within a given period of a specified form. Speech rate is thought to vary according to contextual and emotional factors, between speakers and even between different languages and dialects within one person's speech.<br>
+			<strong>Range:</strong> 0 to 2, in 0.1 steps</p>
+			<h5><strong>Pitch</strong></h5>
+			<p>Pitch is a perceptual property of sounds that enables them to be organized on a frequency-related scale, or more frequently, pitch is the quality that makes it possible to judge sounds in the sense of musical melodies as "higher” and “lower".<br>
+			<strong>Range:</strong> 0 to 2, in 0.1 steps</p>
+			<h5><strong>Volume</strong></h5>
+			<p>The volume of a sound is how loud or quiet the sound is.<br>
+			<strong>Range:</strong> 0 to 1, in 0.01 steps</p><br><br>
+			</div>
+		</div>
+		
+        <div class="carousel-item">
+            <img style="height:750px; width:1000px;" class="d-block" src="img/gray.png" alt="Second slide">
+			<div class="carousel-caption d-none d-md-block text-left">
+			<h3><strong>Additional Information</strong></h3>
+			<h5><strong>Browser Support</strong></h5>
+			<p>Since browsers may support Web Speech API separately and differently, Google Chrome has full support, while Mozilla Firefox, only two TTS voices are available.</p>
+			<p>We find our pre-sets work best with “Voice 1”, the other Voices are provided to offer additional customization.</p>
+			<p>If you use two emojis in a sentence, only the first to appear will affect the application. E.G. if both Angry and Happy appear, the first to be put in the message will be the one that triggers the voice.</p>
+			<p>In the conversation demo of our application, for demonstrative purposes Bot2 always reads in the default voice. This is to show the contrast between TTS with and without our emoji functions.</p>
+			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+			</div>
+        </div>		
+		
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+</div>
+
+
+</div>
+	<!-- reference jquery[this is a JavaScript library (it is like a tool to make JavaScript easier)] -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>	
+	
+	<!-- Bootstrap -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

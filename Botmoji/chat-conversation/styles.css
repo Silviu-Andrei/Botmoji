@@ -1,0 +1,68 @@
+/* Icon in dropMenu  */
+select {
+  font-family: 'FontAwesome', 'Second Font name';
+  font-size: larger;
+}
+
+/* Text Area Unsizeble  */
+textarea {
+  resize: none;
+}
+
+#wrapper {
+	display: inline-block;
+	margin: 0;
+	max-width: 1900px;
+}
+
+@media (min-width: 576px) {
+  #wrapper {
+    max-width: 576px;
+  }
+}
+@media (min-width: 768px) {
+  #wrapper {
+    max-width: 768px;
+  }
+}
+@media (min-width: 992px) {
+  #wrapper {
+    max-width: 992px;
+  }
+}
+@media (min-width: 1200px) {
+  #wrapper {
+    max-width: 1200px;
+  }
+}
+
+@media (min-width: 1840px) {
+	#wrapper {
+    max-width: 1900px;
+  }
+}
+
+/* Chat containers */
+.container {
+  border: 2px solid #dedede;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+  transition: opacity 2000ms;
+  will-change: opacity;
+  
+  /* This is so that the text when sent does not act unadequate. Without it, the text would go in the right of the box.  */
+  word-wrap: break-word;
+}
+
+/* Darker chat container */
+.darker {
+  border-color: #ccc;
+  background-color: #ddd;
+}
+
+.faded-out {
+    opacity: 0;
+}
+

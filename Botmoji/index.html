@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width">
+<!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Menu</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 class="mt-5">Select an emotion to use!</h1>
+
+    <p class="mb-5 mt-4">Choose a preset and alter it to suit your preference</p>
+    
+<form>
+	
+	<!-- Dropdown for emojis / emotions -->
+	
+		<select aria-label="dropmenu for emojis/emotions" class="custom-select mb-3" id="mySelectEmoj" onchange="mySelectEmojs()" name="test2">
+		<option value="0">Excitement - &#128518; &#128525; &#128541; </option>
+		<option value="1">Disappointment - &#128580; &#128530;</option>  
+		<option value="2">Sad - &#128532; &#128542; &#128577; &#128543; &#128534; &#128555; &#128557; &#128553; &#128549; &#128531; &#128533; </option>
+		<option value="3">Deadpan - &#128528; </option>
+		<option value="4">Sincere - &#129296; </option>
+		<option value="5">Sarcasm - &#128579; </option>
+		<option value="6">Happy - &#128512; &#128514; &#128516; &#128515; &#128517; &#128521; &#128522; &#128578; &#128523; &#128537; &#128538; &#128540; &#128539; &#129303; </option>
+		<option value="7">Angry - &#128548; &#128545; &#128544; </option>   		
+		</select>
+
+	<!-- Dropdown end -->
+	
+	<div class="container">
+	
+	<div class="row">
+	<div class="col-10">	<input id="You" type="text" class="form-control txt" placeholder="Type text here to try out the preset" aria-label="Type text here to try out the preset"> </div>
+	<div class="col">	<button class="btn btn-primary" id="play" onclick="speak()">Play</button>	</div>
+    
+	</div>
+	
+	</div>
+	
+	<div>
+      <label for="rate">Rate</label><input class="custom-range" type="range" min="0" max="2" value="1" step="0.1" id="rate">
+      <div class="rate-value"><output for="rate" class="output"></output></div>
+      <div class="clearfix"></div>
+    </div>
+    <div>
+      <label for="pitch">Pitch</label><input class="custom-range" type="range" min="0" max="2" value="1" step="0.1" id="pitch">
+      <div class="pitch-value">1</div>
+      <div class="clearfix"></div>
+    </div>
+	<div>
+      <label for="volume">Volume</label><input class="custom-range" type="range" min="0" max="1" value="0.5" step="0.01" id="volume">
+      <div class="volume-value">1</div>
+      <div class="clearfix"></div>
+    </div>
+	
+    <!-- Dropdown for voices -->
+	
+		<select aria-label="dropmenu for voices" class="custom-select" id="mySelect" name="test">
+		<option value="1">Voice 1</option>
+		<option value="2">Voice 2</option> 
+		<option value="3">Voice 3</option> 
+		<option value="4">Voice 4</option>
+		<option value="5">Voice 5</option>
+		<option value="6">Voice 6</option> 
+		<option value="7">Voice 7</option> 
+		<option value="8">Voice 8</option>
+		<option value="9">Voice 9</option> 
+		<option value="10">Voice 10</option>      		
+		</select>
+
+	<!-- Dropdown end -->
+	
+    <div class="container text-center mt-3">
+	<div class="row">
+	<div class="col">  <button class="btn btn-success" onclick="emojChanges()">Apply changes</button>	</div>
+	<div class="col">  <button class="btn btn-success" onclick="resetPreset()">Reset this emoji</button>	</div>
+	<div class="col">  <button class="btn btn-success" onclick="resetAllPresets()">Reset all emojis</button>	</div>
+    </div>
+	</div>
+	
+	<div class="text-center">
+	
+	<div class="container mb-3">
+	<div class="row">
+	<div class="col">	<a class="btn btn-dark btn-block" onclick="changes()" href="chat-conversation/index.html"> Chat with the bot</a>	</div>
+	<div class="col">	<a class="btn btn-dark btn-block" onclick="changes()" href="chat-conversation/index2.html"> See conversation </a>	</div>
+	</div>
+	</div>
+	
+	<div class="container"> <div class="row"> <div class="col"> <a class="btn btn-info btn-block" href="index2.html"> See the manual </a> </div> </div> </div>
+	</div>
+
+	
+</form>
+
+<!-- jQuery-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	
+<script src="script.js"></script>
+
+</body>
+</html>

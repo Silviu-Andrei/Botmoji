@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width">
+	
+<title>Chat</title>
+
+<!-- Bootstrap (CSS FrameWork) -->
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<!-- Font Awesome icons (free version)-->
+ <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css" rel="stylesheet"/>
+
+ <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="text-center">
+
+<h1>This is our chat</h1>
+<h2>Here you can try out the emotions</h2>
+<h3>Press this button if you want to go back &rarr; <a class="btn btn-primary" href="../index.html">See page before</a></h3>
+
+<div id="wrapper">
+
+   
+<div id="container" style="width: 1000px;">
+
+<div id="chat" style="overflow-y:auto; overflow-x:hidden; height: 480px;"></div>
+
+<div id="interact">
+
+<div class="container">
+<div class="row">
+<div class="col"><textarea class="form-control" id="You" name="You" rows="4" cols="70" placeholder="Chat with the bot"></textarea></div>
+</div>
+
+<div class="row mt-3" style="font-size: larger">
+<div class="col"><select aria-label="dropmenu for emojis" class="form-control" style="width: auto; display: inline"><option value="" selected disabled hidden>&#xf11a;</option></select></div>
+<div class="col"><button class="btn btn-default btn-secondary" id="send-button" onclick="sendIt()">Send</button></div> 
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+</div>
+
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script src="scriptChat.js"></script> 
+</body>
+</html>
